@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   try {
     // Exchange the code for an access token
     const tokenResponse = await axios.post('https://discord.com/api/oauth2/token', new URLSearchParams({
-      client_id: process.env.DISCORD_CLIENT_ID,
+      client_id: '1272938919603867669',
       client_secret: process.env.DISCORD_CLIENT_SECRET,
       grant_type: 'authorization_code',
       code,
